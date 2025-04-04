@@ -4,6 +4,7 @@ import { Providers } from './providers';
 import JsonLd from './JsonLd';
 import { metadata } from './metadata';
 import { Footer } from './components/Footer';
+import { GoogleAnalytics } from './components/GoogleAnalytics';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -19,6 +20,7 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
         <JsonLd />
+        <GoogleAnalytics />
       </head>
       <body className={inter.className} style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
         <Providers>
