@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#1A1B1E"/>
+  <rect x="50" y="50" width="1100" height="530" rx="20" fill="#25262B" stroke="#373A40" stroke-width="2"/>
+  
+  <!-- Logo -->
+  <text x="100" y="150" font-family="Arial" font-size="48" font-weight="bold" fill="#ffffff">
+    Base64 Decode
+  </text>
+  
+  <!-- Title -->
+  <text x="100" y="250" font-family="Arial" font-size="72" font-weight="bold" fill="#ffffff">
+    Free Online Base64
+  </text>
+  <text x="100" y="350" font-family="Arial" font-size="72" font-weight="bold" fill="#ffffff">
+    Decoder and Encoder
+  </text>
+  
+  <!-- Features -->
+  <text x="100" y="450" font-family="Arial" font-size="32" fill="#909296">
+    ✓ Instant Results   ✓ No Registration   ✓ Free Forever
+  </text>
+  
+  <!-- URL -->
+  <text x="100" y="530" font-family="Arial" font-size="36" fill="#909296">
+    base64decode.dev
+  </text>
+</svg> 

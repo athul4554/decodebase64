@@ -7,21 +7,29 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: '*',
         allow: [
           '/',
-          '/contact',
           '/privacy',
           '/terms'
         ],
         disallow: [
-          '/private/',
-          '/admin/',
-          '/api/internal/',
+          '/api/',
           '/*.json$',
           '/*?*', // Prevent crawling of URLs with query parameters
+          '/private/',
+          '/admin/',
+          '/debug/',
+          '/test/',
+          '/*.js$',
+          '/*.css$',
+          '/*.map$'
         ]
       },
       {
         userAgent: 'GPTBot',
         disallow: ['/'], // Prevent GPT from crawling the site
+      },
+      {
+        userAgent: 'Googlebot-Image',
+        allow: ['/og-image.png', '/twitter-image.png']
       }
     ],
     sitemap: 'https://base64decode.dev/sitemap.xml',

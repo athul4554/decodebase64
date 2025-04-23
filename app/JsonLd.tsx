@@ -10,6 +10,7 @@ type JsonLdType = {
     "@type": string;
     price: string;
     priceCurrency: string;
+    availability: string;
   };
   featureList: string[];
   browserRequirements: string;
@@ -40,6 +41,15 @@ type JsonLdType = {
     };
     reviewBody: string;
   };
+  mainEntity: {
+    "@type": string;
+    name: string;
+    description: string;
+  };
+  keywords: string;
+  datePublished: string;
+  dateModified: string;
+  isAccessibleForFree: boolean;
 };
 
 const jsonLd: JsonLdType = {
@@ -47,13 +57,14 @@ const jsonLd: JsonLdType = {
   "@type": "WebApplication",
   "name": "Base64 Decode and Encode Tool",
   "url": "https://base64decode.dev",
-  "description": "Free online Base64 decoder and encoder. Instantly convert text to Base64 or decode Base64 strings. Secure, fast, and easy to use.",
+  "description": "Free online Base64 decoder and encoder. Convert text, files, and binary data instantly. No ads, secure, and fast. Perfect for developers working with JWT tokens, API authentication, and data URIs.",
   "applicationCategory": "DeveloperApplication",
   "operatingSystem": "Any",
   "offers": {
     "@type": "Offer",
     "price": "0",
-    "priceCurrency": "USD"
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
   },
   "featureList": [
     "Base64 Encoding",
@@ -61,7 +72,11 @@ const jsonLd: JsonLdType = {
     "Instant Results",
     "No Server Processing",
     "Free to Use",
-    "Developer-Friendly Interface"
+    "Developer-Friendly Interface",
+    "Local Browser Processing",
+    "No Registration Required",
+    "Support for Large Text",
+    "Copy to Clipboard"
   ],
   "browserRequirements": "Requires JavaScript",
   "permissions": "No special permissions required",
@@ -89,8 +104,17 @@ const jsonLd: JsonLdType = {
       "@type": "Person",
       "name": "Developer Review"
     },
-    "reviewBody": "Fast, reliable, and secure Base64 encoding and decoding tool. Perfect for developers."
-  }
+    "reviewBody": "Excellent Base64 tool! Fast, reliable, and secure. Perfect for developers working with data encoding and API authentication."
+  },
+  "mainEntity": {
+    "@type": "SoftwareApplication",
+    "name": "Base64 Encoder/Decoder",
+    "description": "Online tool for Base64 encoding and decoding with support for text and file conversion"
+  },
+  "keywords": "base64 decode, base64 encode, base64 converter, online base64, jwt decoder, data uri converter",
+  "datePublished": "2024-01-01",
+  "dateModified": "2024-04-03",
+  "isAccessibleForFree": true
 };
 
 export default function JsonLd() {

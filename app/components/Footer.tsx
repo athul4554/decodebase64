@@ -14,13 +14,15 @@ export function Footer() {
               © {currentYear} Base64 Decode. All rights reserved.
             </Text>
             <Group gap="lg" wrap="wrap">
+              <Anchor href="/blog" size="sm">
+                Blog
+              </Anchor>
               <Anchor href="/privacy" size="sm">
                 Privacy Policy
               </Anchor>
               <Anchor href="/terms" size="sm">
                 Terms of Service
               </Anchor>
-
             </Group>
           </Group>
 
